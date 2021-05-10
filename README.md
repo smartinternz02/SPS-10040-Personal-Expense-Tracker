@@ -1,1 +1,1 @@
-# X-Pense
+Personal expense tracker
