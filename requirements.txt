@@ -1,6 +1,8 @@
 Flask
-requests
-jsonify
-mysql-connector-python
-flask_mysqdb
+Flask-MySQL
+Flask-MySQLdb
+
 sendgrid
+requests
+sendmail
+
