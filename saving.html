@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.bg {
+  /* The image used */
+  background-image: url('https://image.freepik.com/free-photo/yellow-piggy-bank-with-money-copy-space-background_23-2148305975.jpg');
+  
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+table,th,td {
+  background-color: #F6FB95;
+  width: 800px;
+  border: 9px black;
+  padding: 15px;
+  margin: 20px;
+}
+
+</style>
+</head>
+<body>
+<div class="bg">         
+        <form method="post" action="{{ url_for('saving') }}">
+
+          <div class="data">
+          <table class="center">
+          
+            <tr>
+            <th><label for="name" style="color:black; font-size:18px;"> TOTAL AMOUNT YOU SAVED TODAY</label></th>
+             <th><input class="form-group" type="text" name="save"  id="p_name" required></th>
+            </tr>
+
+           <tr><tr><th><th>
+           <button type="submit">SUBMIT</button></th></th></tr>
+           </tr>
+</table>
+          </div>
+
+</form>
+        
+        
+    </section>
+ </div>   
+</body>

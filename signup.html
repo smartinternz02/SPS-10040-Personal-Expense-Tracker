@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.bg {
+  /* The image used */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYm3W_9smTcgJQ9kCQpJ_Pjp38nItNW5VmLA&usqp=CAU');
+  
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table,th,td {
+  background-color: #C2DACE;
+  width: 20px;
+  border: 9px black;
+  padding: 15px;
+  margin: 20px;
+}
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="bg">
+<form method="post" action="">
+            <div class="control">
+            <table class="center">
+            <tr>
+            <th><label for="name">NAME</label></th>
+            <th><input type="text" id="name" name="fname" placeholder="enter name" required></th>
+            </tr>
+            
+            <tr>
+            <th><label for="psw">PASSWORD</label></th>
+            <th><input type="password" id="psw" name="pass" placeholder="enter password" required></th>
+           </tr>
+            
+            <tr>
+          <th>  <label for="email">E-MAIL</label></th>
+           <th> <input type="email" id="email" name="emailid" placeholder="enter email address" required></th>
+            </tr>
+            
+            <th><span><input type="checkbox"> Remember me</span></th>
+            
+            <div class="center">
+           
+           <th> <input type="submit" class="btn" value="REGISTER"></th>
+           </div>
+           
+           <caption><p style="color:white; font-size:15px;">ALREADY REGISTERED?
+			<a  style="color:white; font-size:15px;" href="{{url_for('admin')}}">click</a> here to login
+		</p></caption>
+            </table>
+            </div>
+        </form>
+        
+</div>
+</body>
+</html>

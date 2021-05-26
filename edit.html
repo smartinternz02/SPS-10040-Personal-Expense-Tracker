@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+.bg {
+  /* The image used */
+  background-image: url('https://www.wallpapertip.com/wmimgs/27-273398_hand-pencil-drawing-sketch-wallpaper-background-ultra-parable.jpg');
+  
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table,th,td {
+  background-color: #8DA8B6;
+  width: 20px;
+  border: 9px black;
+  padding: 15px;
+  margin: 20px;
+}
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+</style>
+
+</head>
+<body>
+<div class="bg">
+				
+           </div>
+           <section>
+        <div class="form-container">
+            
+        <form method="post" action="{{ url_for('edit') }}">
+<div class="control">
+<table class="center">
+             <input type="text" name="id" value="{{product[0]}}" hidden >
+            </div>
+    
+          <div class="data">
+          <tr>
+            <th><label for="username">Userame</label></th>
+             <th><input class="form-group" type="text" name="un"  id="p_name" value="{{product[1]}}" required></th>
+            </tr>
+            <tr>
+            <th><label for="name">Name</label></th>
+             <th><input class="form-group" type="text" name="expensename"  id="p_name" value="{{product[2]}}" required></th>
+            </tr>
+          </div>
+<div class="data">
+            <tr>
+            <th><label for="desrciption">Description</label></th>
+            <th><input class="form-group" type="text" name="expensedesc" id="P_description" value="{{product[3]}}"required></th>
+            </tr>
+</div>
+
+
+<div class="data">
+               <tr>
+               <th><label for="total amount">Total Amount</label></th>
+               <th><input class="form-group" type="text" name="amount"  id="P_price"value="{{product[4]}}" required></th>
+               </tr>
+   </div>
+         
+<th><button type="submit">SUBMIT</button></th>
+</table>
+          </div>
+
+</form>
+        
+        
+    </section>
+</body>
