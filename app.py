@@ -192,7 +192,7 @@ def calculate():
     threshold=float(data[0][0])*2/100
     if float(abc[0][0])>=threshold:
             
-        message = Mail(from_email='salonimp1999@gmail.com',
+        message = Mail(from_email='nandinibasavaraj20@gmail.com',
                        to_emails=session['emailid'],
                        subject='ALERT MESSAGE TO CUSTOMERS',
                        plain_text_content='you have crossed your daily limit',
